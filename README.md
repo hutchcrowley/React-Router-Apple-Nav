@@ -1,12 +1,12 @@
 # React Router Apple Nav - Stretch Assignment
 
-- [ ] Lets build out a navigation app that mimics `Apple's Slick Navigation` from their marketing website. At this point you have all the knowledge you'll need to be able to complete this stretch assignment.
+- [x] Lets build out a navigation app that mimics `Apple's Slick Navigation` from their marketing website. At this point you have all the knowledge you'll need to be able to complete this stretch assignment.
 
 ## **NOTE** This repository is to be used as a Stretch Assignment
 
-- [ ] Now that you have played around with Routing and have been building out some nested routes etc. It's time to get you into a little more practice. Remember that repetition is key.
-- [ ] The idea here is to build out a replica of Apple's navigation.
-- [ ] Build out a menu similar to the one on https://www.apple.com with a top level navigation.
+- [x] Now that you have played around with Routing and have been building out some nested routes etc. It's time to get you into a little more practice. Remember that repetition is key.
+- [x] The idea here is to build out a replica of Apple's navigation.
+- [x] Build out a menu similar to the one on https://www.apple.com with a top level navigation.
 
 ## Project
 
