@@ -5,7 +5,7 @@
 /* #root html, */
 #root body {
   max-width: 1000px;
-  margin: 0 5px;
+  margin: 0 auto;
   height: 900px;
   font-family: "Font Awesome 5 Free";
   content: "\f133";
@@ -79,6 +79,17 @@ li {
   position: relative;
 }
 
+@keyframes slideIn {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
 #sub-nav-bar {
   background-color: #e4e4e4;
   color: #000000;
@@ -88,12 +99,12 @@ li {
   position: fixed;
   top: 5%;
   right: 0%;
-  display: inline-flex;
+  display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   text-decoration: none;
-  transition: transfrom 4s ease;
+  animation: 1s slideIn;
 }
 
 #sub-nav-bar .hidden {
@@ -134,9 +145,17 @@ li {
 
 .home-splash {
   position: absolute;
+  width: 100vw;
+  height: 700px;
+  text-align: center;
   top: 20%;
   color: #ffffff;
-  filter: brightness(90%);
+  z-index: 0;
+}
+
+.home-splash img {
+  position: relative;
+  z-index: 2;
 }
 
 .home-splash p {
@@ -147,6 +166,7 @@ li {
   transform: translate(-50%, -50%);
   font-weight: 350;
   font-size: 15pt;
+  z-index: 10;
 }
 
 .home-splash h1 {
@@ -156,6 +176,7 @@ li {
   transform: translate(-50%, -50%);
   font-size: 65pt;
   font-weight: 350;
+  z-index: 6;
 }
 
 .home-splash h2 {
@@ -165,4 +186,13 @@ li {
   transform: translate(-50%, -50%);
   font-size: 30pt;
   font-weight: 350;
+  z-index: 6;
+}
+
+.home-splash .overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  filter: brightness(50%);
+  z-index: 4;
 }
