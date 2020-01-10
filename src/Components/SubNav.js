@@ -23,7 +23,7 @@ function SubLink({ link }) {
   const { name } = link;
   return (
     <div className="sub-link">
-      <NavLink to={`/${name}`}>
+      <NavLink to={`apple-router-nav.netlify.com/${name}`}>
         <img src={link.img} alt="sub" />
         <p>{name}</p>
       </NavLink>
