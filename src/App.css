@@ -81,11 +81,11 @@ li {
 
 @keyframes slideIn {
   from {
-    margin-right: 100%;
-    width: 300%;
+    margin-left: 100%;
+    width: 200%;
   }
   to {
-    margin-right: 0%;
+    margin-left: 0%;
     width: 100%;
   }
 }
@@ -104,7 +104,7 @@ li {
   justify-content: center;
   align-content: center;
   text-decoration: none;
-  animation: 1s slideIn;
+  animation: 650ms slideIn;
 }
 
 #sub-nav-bar .hidden {
@@ -150,16 +150,15 @@ li {
   text-align: center;
   top: 20%;
   color: #ffffff;
-  z-index: 0;
 }
 
 .home-splash img {
   position: relative;
-  z-index: 2;
+  z-index: 0;
+  filter: brightness(60%);
 }
 
 .home-splash p {
-  color: #ffffff;
   position: absolute;
   top: 35%;
   left: 50%;
@@ -176,7 +175,7 @@ li {
   transform: translate(-50%, -50%);
   font-size: 65pt;
   font-weight: 350;
-  z-index: 6;
+  z-index: 10;
 }
 
 .home-splash h2 {
@@ -186,13 +185,5 @@ li {
   transform: translate(-50%, -50%);
   font-size: 30pt;
   font-weight: 350;
-  z-index: 6;
-}
-
-.home-splash .overlay {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  filter: brightness(50%);
-  z-index: 4;
+  z-index: 10;
 }
