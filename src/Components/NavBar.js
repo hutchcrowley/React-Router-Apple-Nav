@@ -14,7 +14,7 @@ const NavBar = props => {
   return (
     <div className="nav-bar" onClick={animateNav}>
       <Navbar fixed="top" className="navigation-bar" expand="xl">
-        <NavLink to="apple-router-nav.netlify.com/">
+        <NavLink to="/">
           <img
             className="apple-logo"
             src={require("../Images/apple.png")}
@@ -24,15 +24,11 @@ const NavBar = props => {
         {props.links.map((link, index) => (
           <HeadLink key={index} link={link} />
         ))}
-        <NavLink
-          to="apple-router-nav.netlify.com/Support"
-          className="nav-link"
-          onClick={animateNav}
-        >
+        <NavLink to="/Support" className="nav-link" onClick={animateNav}>
           <p>Support</p>
         </NavLink>
         <NavLink
-          to="apple-router-nav.netlify.com/Search"
+          to="/Search"
           classname="nav-link"
           id="search"
           onClick={animateNav}
@@ -40,7 +36,7 @@ const NavBar = props => {
           <i className="fas fa-search" />
         </NavLink>
         <NavLink
-          to="apple-router-nav.netlify.com/Shopping"
+          to="/Shopping"
           className="nav-link"
           id="shop"
           onClick={animateNav}
@@ -50,7 +46,7 @@ const NavBar = props => {
       </Navbar>
       {props.links.map((link, index) => (
         <Route
-          path={`apple-router-nav.netlify.com/${link.name}`}
+          path={`/${link.name}`}
           render={props => (
             <SubNav {...props} link={link} visibility={visibility} />
           )}

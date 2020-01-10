@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div className="App">
       <Route
-        path="apple-router-nav.netlify.com/"
+        path="/"
         render={props => <NavBar {...props} links={navLinks} />}
       />
       <div className="home-splash">
